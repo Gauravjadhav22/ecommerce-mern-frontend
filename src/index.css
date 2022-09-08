@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.arrows{
+  margin: 1px;
+  z-index: 1;
+}
+.MiniContainer {
+  padding: 2px;
+ color: black;
+ transition: 500s ease-in-out;
+}
+
+.LinkItem {
+  /* border: 1px solid black; */
+  z-index: 2;
+  padding: 4px;
+  margin: 1px;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation{
+  position: absolute;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+}
+
