@@ -1,10 +1,8 @@
 import { popularProducts } from "../data";
 import Styled from "styled-components";
-import { mobile } from "../responsive";
 import Product from "./Product";
 import { useEffect, useState } from "react";
 import { publicRequest } from "../requestMethods";
-import { object } from "prop-types";
 const Container = Styled.div`
     padding: 20px;
     display: flex;
@@ -37,7 +35,7 @@ const Products = ({ cat, filters, sort }) => {
       );
   }, [products, cat, filters]);
   useEffect(() => {
-    if (sort == "newest") {
+    if (sort === "newest") {
       setFilterProducts((prev) =>
         [...prev].sort((a, b) => a.createdAt - b.createdAt)
       );

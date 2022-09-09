@@ -7,7 +7,7 @@ import { mobile } from "../responsive";
 import Profile from "./Profile";
 import { useSelector, useDispatch } from "react-redux";
 import { publicRequest } from "../requestMethods";
-import { addsearchedProduct, removeSearch } from "../redux/searchedPr";
+import { addsearchedProduct, } from "../redux/searchedPr";
 
 const Container = styled.div`
   height: 60px;
@@ -102,7 +102,7 @@ const Navbar = () => {
   const handleChange = async () => {
     // e.preventDefault();
     let prods;
-    if (query != "") {
+    if (query !== "") {
       console.log(query);
       prods = productData.filter((product) => {
         console.log(product.title.toLowerCase().includes(query.toLowerCase()));
