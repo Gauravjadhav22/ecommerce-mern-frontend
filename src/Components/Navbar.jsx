@@ -11,7 +11,7 @@ import { addsearchedProduct, } from "../redux/searchedPr";
 
 const Container = styled.div`
   height: 60px;
-  ${mobile({ height: "50px" })}
+  ${mobile({ height: "50px",marginBottom:"50px" })}
 `;
 
 const Wrapper = styled.div`
@@ -19,7 +19,8 @@ const Wrapper = styled.div`
   padding-right: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between ${mobile({ padding: "10px 0px" })};
+  justify-content: space-between ;
+  ${mobile({ padding: "10px 0px" ,display:"flex",flexDirection:"column"})};
 `;
 const Left = styled.div`
   flex: 1;
@@ -50,7 +51,7 @@ margin-left:"50px"
   border: 2px solid lightgreen;
   width: 200px;
   height: 80%;
-  ${mobile({ width: "50px" })}
+  ${mobile({ width: "150px" })}
 `;
 
 const Center = styled.div`
