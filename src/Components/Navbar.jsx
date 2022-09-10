@@ -11,7 +11,7 @@ import { addsearchedProduct, } from "../redux/searchedPr";
 
 const Container = styled.div`
   height: 60px;
-  ${mobile({ height: "50px",marginBottom:"50px" })}
+  ${mobile({ height: "50px",marginBottom:"150px" })}
 `;
 
 const Wrapper = styled.div`
@@ -91,7 +91,7 @@ const Navbar = () => {
     const getProducts = async () => {
       try {
         const res = await publicRequest.get("/products");
-        console.log(res.data.allproducts);
+        // console.log(res.data.allproducts);
         setProductData(res.data.allproducts);
       } catch (error) {
         console.log(error);

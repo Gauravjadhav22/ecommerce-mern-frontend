@@ -45,20 +45,18 @@ const SearchProducts = () => {
   const [filters, setFilters] = useState({});
   const [sort, setSort] = useState("newest");
 
-  console.log(cat);
   const handleFilters = (e) => {
     const value = e.target.value;
     setFilters({
       ...filters,
       [e.target.name]: value,
     });
+    console.log(filters);
   };
-  console.log(filters);
   return (
     <Container>
       <Navbar />
       <br />
-      <Announcement />
       <Title>Dresses</Title>
       <FilterContainer>
         <Filter>
@@ -90,7 +88,7 @@ const SearchProducts = () => {
           </Select>
         </Filter>
       </FilterContainer>
-      <Products cat={cat} filters={filters} sort={sort}/>
+      {/* <Products cat={cat} filters={filters} sort={sort}/> */}
       <Newsletter />
       <Footer />
     </Container>
